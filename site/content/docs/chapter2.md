@@ -238,7 +238,7 @@ If you want to send the same message more than once, and it's sizable, create a 
 
 ZeroMQ also supports *multipart* messages, which let you send or receive a list of frames as a single on-the-wire message. This is widely used in real applications and we'll look at that later in this chapter and in [Chapter 3 - Advanced Request-Reply Patterns](chapter3#advanced-request-reply).
 
-Frames (also called "message parts" in the ZeroMQ reference manual pages) are the basic wire format for ZeroMQ messages. A frame is a length-specified block of data. The length can be zero upwards. If you've done any TCP programming you'll appreciate why frames are a useful answer to the question "how much data am I supposed to read of this network socket now?"
+Frames (also called "message parts" in the ZeroMQ reference manual pages) are the basic wire format for ZeroMQ messages. A frame is a length-specified block of data. The length can be zero upwards. If you've done any TCP programming you'll appreciate why frames are a useful answer to the question "how much data am I supposed to read off this network socket now?"
 
 There is a wire-level [protocol called ZMTP](http://rfc.zeromq.org/spec:15) that defines how ZeroMQ reads and writes frames on a TCP connection. If you're interested in how this works, the spec is quite short.
 
